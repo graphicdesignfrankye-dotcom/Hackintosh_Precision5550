@@ -1,0 +1,12 @@
+DefinitionBlock ("", "SSDT", 2, "DRTNIA", "TYPC", 0x00000000)
+{
+    External (_SB_.PCI0.RP05.PXSX, DeviceObj)
+
+    Scope (_SB_.PCI0.RP05.PXSX)
+    {
+        Method (_RMV, 0, NotSerialized)
+        {
+            Return (One)
+        }
+    }
+}
